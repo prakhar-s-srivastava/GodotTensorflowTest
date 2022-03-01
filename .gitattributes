@@ -1,0 +1,9 @@
+*.c eol=lf
+*.cpp eol=lf
+*.gd eol=lf
+*.tscn eol=lf
+*.cfg eol=lf
+*.godot eol=lf
+*.gdns eol=lf
+*.gdnlib eol=lf
+*.so filter=lfs diff=lfs merge=lfs -text

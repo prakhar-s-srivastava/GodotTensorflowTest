@@ -1,0 +1,12 @@
+102b54792f6b2ef812636a2bdaeb9d34
+::res://::1645047984
+icon.png::StreamTexture2D::2467218756588846752::1642446851::1645047986::1::::<><>::
+main.gd::GDScript::-1::1642446851::0::1::::<><>::
+main.tscn::PackedScene::-1::1642453387::0::1::::<><>::res://main.gd<>res://icon.png<>res://gdnative/simple_sprite.gdns
+::res://gdnative/::1642446851
+simple.gdnlib::GDNativeLibrary::-1::1642446851::0::1::::<><>::
+simple.gdns::NativeScript::-1::1642446851::0::1::::<><>::
+simple_sprite.gdns::NativeScript::-1::1642446851::0::1::::<><>::
+::res://gdnative/linux/::1642453381
+::res://gdnative/osx/::1642446851
+::res://gdnative/windows/::1642446851
