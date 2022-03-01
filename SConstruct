@@ -91,11 +91,16 @@ env.Append(
 
 env.Append(
     LIBS=[
-        env.File(os.path.join("godot-cpp/bin", "libgodot-cpp.%s.%s.64%s" % (platform, env["target"], env["LIBSUFFIX"])))
+        env.File(os.path.join("godot-cpp/bin", "libgodot-cpp.%s.%s.64%s" % (platform, env["target"], env["LIBSUFFIX"]))),
+        env.File(os.path.join("src/libtensorflowlite.so"))
     ]
 )
 
 env.Append(LIBPATH=[godot_bindings_path + "/bin/"])
+
+env.Append(LINKFLAGS=[
+    '-Wl,-rpath,\'$$ORIGIN\''
+])
 
 sources = []
 add_sources(sources, "src")

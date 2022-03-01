@@ -6,6 +6,7 @@
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
+file_name = "res://hand_landmark_full.tflite"
 
 [node name="Button" type="Button" parent="."]
 margin_left = 333.0

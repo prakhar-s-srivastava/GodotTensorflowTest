@@ -2,6 +2,7 @@
 
 void Simple::_register_methods() {
 	godot::register_method("get_data", &Simple::get_data);
+	godot::register_method("load_model", &Simple::load_model);
 }
 
 void Simple::_init() {
@@ -12,9 +13,47 @@ godot::String Simple::get_data() const {
 	return data;
 }
 
+
+void Simple::load_model(const godot::String filename)
+{
+	model =tflite::FlatBufferModel::BuildFromFile(filename.utf8().get_data());
+    // TFLITE_MINIMAL_CHECK(model != nullptr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void SimpleSprite::_register_methods() {
 	godot::register_method("_process", &SimpleSprite::_process);
 }
+
 
 // `_init` doesn't need to be registered in `_register_methods`.
 // `_init` is always required, if you exclude it then Godot will crash.
